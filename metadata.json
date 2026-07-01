@@ -1,0 +1,6 @@
+{
+  "name": "Fisioterapia Movimiento Vital",
+  "description": "Landing page profesional para la clínica de fisioterapia Fisioterapia Movimiento Vital. Recupera tu movimiento. Recupera tu vida.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

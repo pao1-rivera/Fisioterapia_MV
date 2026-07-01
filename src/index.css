@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=Alex+Brush&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", serif;
+  --font-cursive: "Alex Brush", cursive;
+  
+  --color-brand-teal: #174B4C;     /* Main Teal */
+  --color-brand-olive: #47622B;    /* Main Olive */
+  --color-brand-orange: #E89528;   /* Main Orange */
+  --color-brand-beige: #C8C0B2;    /* Beige */
+  --color-brand-dark: #0A1818;     /* Dark Ink */
+  --color-brand-cream: #FFFFFF;    /* Pristine White Background */
+}
+
+/* Smooth scrolling for anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Leaf Pattern Background */
+.bg-leaf-pattern {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='360' viewBox='0 0 240 360'%3E%3Cpath d='M80 320 C90 260, 120 200, 160 140 C190 90, 210 60, 220 30 C200 60, 175 95, 160 130 C145 165, 138 210, 140 265' stroke='%23C8C0B2' stroke-width='1.5' stroke-linecap='round' fill='none' stroke-opacity='0.15'/%3E%3Cpath d='M160 140 C140 120, 110 110, 80 115 C110 125, 135 145, 145 170 Z' fill='%23C8C0B2' fill-opacity='0.12'/%3E%3Cpath d='M185 95 C185 70, 165 50, 140 45 C160 55, 175 75, 178 95 Z' fill='%23C8C0B2' fill-opacity='0.12'/%3E%3Cpath d='M115 210 C95 200, 70 205, 50 220 C70 215, 95 220, 105 235 Z' fill='%23C8C0B2' fill-opacity='0.12'/%3E%3Cpath d='M140 265 C125 260, 105 265, 90 280 C105 275, 125 280, 132 295 Z' fill='%23C8C0B2' fill-opacity='0.12'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+/* Simple pulse animation for floating components */
+@keyframes soft-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(24, 75, 76, 0.3), 0 4px 6px -2px rgba(24, 75, 76, 0.15); }
+  50% { transform: scale(1.05); box-shadow: 0 20px 25px -5px rgba(24, 75, 76, 0.4), 0 10px 10px -5px rgba(24, 75, 76, 0.2); }
+}
+
+.animate-soft-pulse {
+  animation: soft-pulse 3s infinite;
+}
+
