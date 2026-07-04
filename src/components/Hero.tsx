@@ -2,13 +2,14 @@ import React from "react";
 import { MessageCircle, Star, Shield, ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 
+// @ts-expect-error - image asset compiled by Vite
+import heroImgSrc from "../assets/images/physiotherapist_hero_1782931185524.jpg";
+
 interface HeroProps {
   onContactClick: () => void;
 }
 
 export default function Hero({ onContactClick }: HeroProps) {
-  // Use the exact path of our generated professional image
-  const heroImgSrc = "/src/assets/images/physiotherapist_hero_1782931185524.jpg";
 
   return (
     <section
